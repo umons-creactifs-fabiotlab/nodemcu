@@ -4,7 +4,7 @@ François Roland <francois.roland@umons.ac.be>
 
 == Files
 
-- MoveServo.ino[] Moves the servo from 0 to 170° by step of 10°.
-  - ![connections with the ESP8266](https://photos.app.goo.gl/Zq1HydDByVFladFX2)
-  - ![connections with the servo](https://photos.app.goo.gl/3LinZCq0PSQtADgA3)
-  - video::https://photos.app.goo.gl/pLxoEymEHZeNkb9E2[]
+* MoveServo.ino[] Moves the servo from 0 to 170° by step of 10°.
+** ![connections with the ESP8266](https://photos.app.goo.gl/Zq1HydDByVFladFX2)
+** ![connections with the servo](https://photos.app.goo.gl/3LinZCq0PSQtADgA3)
+** video::https://photos.app.goo.gl/pLxoEymEHZeNkb9E2[height=300, widht=400]

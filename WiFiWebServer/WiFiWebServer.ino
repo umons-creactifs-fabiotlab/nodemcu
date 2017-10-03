@@ -1,16 +1,11 @@
-/*
- *  This sketch demonstrates how to set up a simple HTTP-like server.
- *  The server will set a GPIO pin depending on the request
- *    http://server_ip/gpio/0 will set the GPIO2 low,
- *    http://server_ip/gpio/1 will set the GPIO2 high
- *  server_ip is the IP address of the ESP8266 module, will be 
- *  printed to Serial when the module is connected.
- */
-
 #include <ESP8266WiFi.h>
+#include <Servo.h>
 
-const char* ssid = "your-ssid";
-const char* password = "your-password";
+const char* ssid = "froland-xps15-l";
+const char* password = "Bv3IwsJi";
+
+Servo myservo;
+int pos;
 
 // Create an instance of the server
 // specify the port to listen on as an argument
@@ -20,9 +15,10 @@ void setup() {
   Serial.begin(115200);
   delay(10);
 
-  // prepare GPIO2
-  pinMode(2, OUTPUT);
-  digitalWrite(2, 0);
+  // prepare servo
+  myservo.attach(D1);
+  myservo.write(0);
+  pos = 0;
   
   // Connect to WiFi network
   Serial.println();
@@ -67,28 +63,42 @@ void loop() {
   
   // Match the request
   int val;
-  if (req.indexOf("/gpio/0") != -1)
-    val = 0;
-  else if (req.indexOf("/gpio/1") != -1)
-    val = 1;
-  else {
-    Serial.println("invalid request");
-    client.stop();
-    return;
+  if (req.indexOf("GET") != -1) {
+    client.flush();
+  
+    // Prepare the response
+    String s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html><p>Servo position is now: " + String(pos) + "°</p>";
+    s += "<form method=\"POST\" action=\"/\">";
+    s += "<p><input type=\"text\" name=\"pos\"> <input type=\"submit\"></p>";
+    s += "</form>";
+    s += "</html>\n";
+  
+    // Send the response to the client
+    client.print(s);
+  } else {
+    if (req.indexOf("POST") != -1) {
+      String formData;
+      int retry = 0;
+      do {
+        req = client.readStringUntil('\r');
+        client.readStringUntil('\n');
+        if (req.indexOf("pos=") != -1) {
+          int index = req.indexOf("pos=") + 4;
+          pos = req.substring(index).toInt();
+          myservo.write(pos);
+        }
+        if (req == "") break;
+        retry++;
+      } while(req.length() == 0 && retry < 3);
+    }
+    client.flush();
+
+    String s = "HTTP/1.1 303 See Other\r\n";
+    s +="Location: /\r\n";
+
+    client.print(s);
   }
 
-  // Set GPIO2 according to the request
-  digitalWrite(2, val);
-  
-  client.flush();
-
-  // Prepare the response
-  String s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>\r\nGPIO is now ";
-  s += (val)?"high":"low";
-  s += "</html>\n";
-
-  // Send the response to the client
-  client.print(s);
   delay(1);
   Serial.println("Client disonnected");
 

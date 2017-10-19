@@ -16,13 +16,13 @@ void setup()
 
 void loop() 
 {
-  Serial.print("Waiting for command:\n");
+  Serial.print("\nWaiting for command:\n");
   do
   {
-    var=Serial.readStringUntil('\n');
+    var=Serial.readStringUntil('\r');
   }while(var.length()==0);
   
-  Serial.print("\nReceived command from serial port: ");
+  Serial.print("Received command from serial port: ");
   Serial.print(var);
   Serial.print("\n\n");
   servo.write(var.toInt()%181);

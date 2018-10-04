@@ -1,8 +1,8 @@
 :title-separator: {sp}|
 = Ateliers Créactifs Fab-IoT-Lab | Créez votre objet connecté
 François Roland <francois.roland@umons.ac.be>
-v2, 10 octobre 2018
-:toc:
+10 octobre 2018
+:icons: font
 
 == Protocole
 
@@ -53,10 +53,10 @@ L'expérience montre que l'électronique du servomoteur est suffisamment sensibl
 Ceci nous permet donc de commander le servomoteur à partir de notre NodeMCU sans courir de risque pour le microcontrôleur ou le servo.
 
 .Schéma de connexion du servomoteur sur le NodeMCU
-image::nodemcu-servo_schem.png[]
+image::nodemcu-servo_schem.png[400,600]
 
 .Représentation physique de la connexion du servomoteur sur le NodeMCU
-image::nodemcu-servo_bb.png[]
+image::nodemcu-servo_bb.png[400,600]
 
 [bibliography]
 == Ressources

@@ -1,7 +1,7 @@
 :title-separator: {sp}|
 = Ateliers Créactifs Fab-IoT-Lab | Créez votre objet connecté
 François Roland <francois.roland@umons.ac.be>
-10 octobre 2018
+4 octobre 2018
 :icons: font
 
 == Protocole

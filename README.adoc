@@ -3,6 +3,12 @@
 François Roland <francois.roland@umons.ac.be>
 4 octobre 2018
 :icons: font
+ifdef::backend-pdf[:notitle:]
+
+ifdef::backend-pdf[]
+[discrete]
+= {doctitle}
+endif::[]
 
 == Protocole
 
@@ -52,11 +58,8 @@ La commande du servomoteur se fait à l'aide d'une largeur d'impulsion <<SG90>>.
 L'expérience montre que l'électronique du servomoteur est suffisamment sensible que pour détecter cette impulsion même si la tension de crête ne monte qu'à 3.3V.
 Ceci nous permet donc de commander le servomoteur à partir de notre NodeMCU sans courir de risque pour le microcontrôleur ou le servo.
 
-.Schéma de connexion du servomoteur sur le NodeMCU
-image::nodemcu-servo_schem.png[400,600]
-
-.Représentation physique de la connexion du servomoteur sur le NodeMCU
-image::nodemcu-servo_bb.png[400,600]
+image::nodemcu-servo_schem.png[align=center,pdfwidth=60%]
+image::nodemcu-servo_bb.png[align=center,pdfwidth=60%]
 
 [bibliography]
 == Ressources

@@ -71,11 +71,13 @@ image::nodemcu-servo_bb.png[align=center,pdfwidth=60%]
 - [[[VanLaere2017]]] Aurélien Van Laere (2017). _Atelier Créactif: Fab-IoT-Lab_. Mons : Université de Mons.
 - [[[SG90]]] Datasheet SG90. _SG90 9g Micro Servo_. Sur https://cdn.hackaday.io/files/11936510669824/SG90Servo.pdf. Page consultée le 04/10/2018.
 - [[[Arduino]]] _Arduino IDE_. Sur https://www.arduino.cc/en/Main/Software. Page consultée le 04/10/2018.
-- [[[ESP9266ArduinoCore]]] _ESP8266 core for Arduino_. Sur https://arduino-esp8266.readthedocs.io/en/latest/index.html. Page consultée le 04/10/2018.
+- [[[ESP8266ArduinoCore]]] _ESP8266 core for Arduino_. Sur https://arduino-esp8266.readthedocs.io/en/latest/index.html. Page consultée le 04/10/2018.
 - [[[Putty]]] Moniteur port série. _PuTTY: a free SSH and Telnet client_. Sur https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html. Page consultée le 04/10/2018.
 - [[[ServoLib]]] Librairie servomoteur. _Servo Library_. Sur https://www.arduino.cc/en/reference/servo. Page consultée le 04/10/2018.
 - [[[SerialLib]]] Librairie port série. _Serial_. Sur https://www.arduino.cc/reference/en/language/functions/communication/serial/. Page consultée le 04/10/2018.
 - [[[ESP8266WiFiLib]]] Libraire WiFi pour ESP8266_ESP8266WiFi Library_. Sur https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html. Page consultée le 04/10/2018.
+- [[[ElectronicWings]]] Documentation communautaire ElectronicWings. _Basics using Arduino IDE | NodeMCU_. Sur http://www.electronicwings.com/nodemcu/arduino-ide. Page consultée le 09/10/2018.
+- [[[Kolban2016]]] Neil Kolban (2016). _Kolban's book on the ESP8266_. Sur http://neilkolban.com/tech/esp8266/. Page consultée le 09/10/2018.
 
 == Pour aller plus loin
 

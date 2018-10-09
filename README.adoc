@@ -85,6 +85,7 @@ image::nodemcu-servo_bb.png[align=center,pdfwidth=60%]
 https://www.fun-mooc.fr/courses/course-v1:univ-toulouse+101003+session02/info
 * FUN-MOOC Fabriquer un objet connecté
 https://www.fun-mooc.fr/courses/MinesTelecom/04018S02/session02/info
-* Youtube Channel Andreas Spiess - My ESP32 videos
-https://www.youtube.com/channel/UCu7_D0o48KbfhpEohoP7YSQ
+* Youtube Channel Andreas Spiess - My ESP8266 Videos
+https://www.youtube.com/watch?v=NzJ2-siImC0&list=PL3XBzmAj53Rlu3Byy_GkqG6b-nwEpWku0
+
 

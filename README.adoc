@@ -1,7 +1,7 @@
 :title-separator: {sp}|
 = Ateliers Créactifs Fab-IoT-Lab | Créez votre objet connecté
 François Roland <francois.roland@umons.ac.be>
-4 octobre 2018
+9 octobre 2018
 :icons: font
 ifdef::backend-pdf[:notitle:]
 
@@ -9,6 +9,10 @@ ifdef::backend-pdf[]
 [discrete]
 = {doctitle}
 endif::[]
+
+== Repository GitHub
+
+https://github.com/umons-creactifs-fabiotlab/nodemcu
 
 == Protocole
 

@@ -10,9 +10,7 @@ ifdef::backend-pdf[]
 = {doctitle}
 endif::[]
 
-== Repository GitHub
-
-https://github.com/umons-creactifs-fabiotlab/nodemcu
+TIP: Vous trouverez la version la plus récente de ce protocole, les drivers Windows et Mac OSX pour l'ESP8266 ainsi que des exemples de code Arduino sur GitHub. https://github.com/umons-creactifs-fabiotlab/nodemcu
 
 == Protocole
 

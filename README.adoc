@@ -76,6 +76,7 @@ image::nodemcu-servo_bb.png[align=center,pdfwidth=60%]
 - [[[ESP8266WiFiLib]]] Libraire WiFi pour ESP8266_ESP8266WiFi Library_. Sur https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html. Page consultée le 04/10/2018.
 - [[[ElectronicWings]]] Documentation communautaire ElectronicWings. _Basics using Arduino IDE | NodeMCU_. Sur http://www.electronicwings.com/nodemcu/arduino-ide. Page consultée le 09/10/2018.
 - [[[Kolban2016]]] Neil Kolban (2016). _Kolban's book on the ESP8266_. Sur http://neilkolban.com/tech/esp8266/. Page consultée le 09/10/2018.
+- [[[Lassen]]] Configuration sans fil d'un ESP8266. _ESP 8266 Arduino IDE WebConfig_. Sur https://www.john-lassen.de/en/projects/esp-8266-arduino-ide-webconfig. Page consultée le 23/09/2019.
 
 == Pour aller plus loin
 

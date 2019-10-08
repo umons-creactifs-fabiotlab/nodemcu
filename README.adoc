@@ -53,7 +53,7 @@ KEY   9UTJT63F6YST
 * Ecriture d’un programme permettant de se connecter à un réseau WiFi à l’aide de la libraire ESP8266WIFI :
 ** Configurer le microcontrôleur en mode station
 ** SSID : `UMONS-VISITOR`
-** Password : `43Zi11t3HiWv1E3Y`
+** Password : `9UTJT63F6YST`
 ** Mode : statique
 
 NOTE: Pour cela, imposer les paramètres "IP", "IP Gateway" et "netmask".
